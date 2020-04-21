@@ -31,7 +31,7 @@ Header:
 Payload:
    {
      "iss":"www.something.tld",
-     "kid":"8354bb43-e38c-4c0e-9f4a-b0efa32ef360"
+     "kid":"8354bb43-e38c-4c0e-9f4a-b0efa32ef360",
      "sub": "15e2f938-0a30-45d0-8fa8-7a23357f06e8",
      "nbf": 1516239022,
      "exp": 1686906796
@@ -39,5 +39,6 @@ Payload:
 ```
 
 ## Helpful Links
-
+- [https://auth0.com/blog/navigating-rs256-and-jwks/](https://auth0.com/blog/navigating-rs256-and-jwks/)
 - [https://jwt.io/](https://jwt.io/)
+- [https://stackoverflow.com/questions/39239051/rs256-vs-hs256-whats-the-difference](https://stackoverflow.com/questions/39239051/rs256-vs-hs256-whats-the-difference)
