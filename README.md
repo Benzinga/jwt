@@ -4,6 +4,8 @@
 
 Should be included in HTTP Requests in the `Authorization` header field, or as a query parameter depending on the API documentation for a given endpoint.
 
+For JWT, we recommend using RS256. You may generate a sample JWT using https://jwt.io/. You need to send us public/private key depending upon which algorithm you are using. We will add that public/private key on our side, so it will verify signature generated. Also, you need to send us the value of <b>iss</b> (issuer) value of payload. <br/> <b>Note:</b> Prepend <b>Bearer</b> to your actual jwt when you authorize here to test.
+
 ```
 Authorization: Bearer <jwt-token>
 ```
