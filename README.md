@@ -15,10 +15,10 @@ Authorization: Bearer <jwt-token>
 Header:
 - `alg` (algorithm): Must be string signaling signing algorithm, should be `RS256`
 - `typ` (type): Must be `JWT`
+- `kid`(key id): Must be unique signing key identifier string
 
 Payload:
 - `iss`(issuer): Must be issuer domain such as `sub.domain.tld`
-- `kid`(key id): Must be unique signing key identifier string
 - `sub` (subject): Must be unique user id
 - `nbf` (not before): Must be Unix timestamp seconds as `number` to indicate time before which token should not be accepted, typically should be set to creation timestamp.
 - `exp` (expires): Must be Unix timestamp seconds as `number`, to indicate time after which token should not be accepted.
